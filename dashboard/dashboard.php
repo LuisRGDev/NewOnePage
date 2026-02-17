@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina TI</title>
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
   </head>
   <body>
     <header>
@@ -14,10 +14,10 @@
             <h1 class="title">THE CHRONICLES OF THE NEW ONE!</h1>
             <li class="item-centralizado">
               <span
-                ><a href="../index.html" aria-label="ir al inicio"
+                ><a href="../dashboard/dashboard.php" aria-label="ir al inicio"
                   ><img
                     class="imgtno"
-                    src="Media/TNOlogo.png"
+                    src="../Media/TNOlogo.png"
                     alt="imagen logo the new one" /></a
               ></span>
               <button class="hamburger" id="hamburger">☰</button>
@@ -37,7 +37,7 @@
                   src="https://cdn-icons-png.flaticon.com/128/10/10910.png"
                   alt="icono de tareas"
                 />
-                <a href="HTML/tareas.html">Tareas</a>
+                <a href="../HTML/tareas.php">Tareas</a>
               </li>
               <li class="options-list">
                 <img
@@ -45,7 +45,7 @@
                   src="https://cdn-icons-png.flaticon.com/128/1001/1001371.png"
                   alt="icono de notas"
                 />
-                <a href="/HTML/notas.html">Notas</a>
+                <a href="../HTML/notas.php">Notas</a>
               </li>
               <li class="options-list">
                 <img
@@ -203,7 +203,7 @@
             <div>
               <input
                 type="text"
-                id="name"
+                id="name_contact"
                 name="name"
                 required
                 placeholder="  Nombre"
@@ -213,7 +213,7 @@
             <div>
               <input
                 type="email"
-                id="email"
+                id="email_contact"
                 name="email"
                 required
                 placeholder="  Email"
@@ -288,7 +288,7 @@
           <li class="img-footer-logo">
             <img
               class="img-footer"
-              src="Media/TNOlogo.png"
+              src="../Media/TNOlogo.png"
               alt="imagen the new one"
             />
           </li>
@@ -317,6 +317,6 @@
       </section>
     </footer>
 
-    <script src="/JS/script.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>

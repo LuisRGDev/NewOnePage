@@ -14,7 +14,7 @@
             <h1 class="title">THE CHRONICLES OF THE NEW ONE!</h1>
             <li class="item-centralizado">
               <span
-                ><a href="../index.html" aria-label="ir al inicio"
+                ><a href="../dashboard/dashboard.php." aria-label="ir al inicio"
                   ><img
                     class="imgtno"
                     src="../Media/TNOlogo.png"
@@ -28,7 +28,7 @@
                   src="https://cdn-icons-png.flaticon.com/128/10165/10165587.png"
                   alt="icono de descripcion"
                 />
-                <a href="../index.html#Descripcion">Descripcion</a>
+                <a href="../dashboard/dashboard.php#Descripcion">Descripcion</a>
               </li>
               <li class="options-list">
                 <img
@@ -44,7 +44,7 @@
                   src="https://cdn-icons-png.flaticon.com/128/1001/1001371.png"
                   alt="icono de notas"
                 />
-                <a href="../HTML/notas.html">Notas</a>
+                <a href="../HTML/notas.php">Notas</a>
               </li>
               <li class="options-list">
                 <img

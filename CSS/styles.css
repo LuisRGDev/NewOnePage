@@ -44,16 +44,18 @@ body::before {
 /* ------------------------------------------------------Login------------------------------------------------------ */
 
 .logotno{
-    width: 5rem;
+    width: 8rem;
     height: auto;
     z-index: -1;
+    padding-bottom: -200;
+    color: white;
 }
 
 .section-log{
     padding-top: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("https://i.pinimg.com/1200x/89/74/9c/89749c6f9e422594107f3a297880775b.jpg");
+    background-image: url("https://images.unsplash.com/photo-1563089145-599997674d42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHByb2dyYW1hY2lvbnxlbnwwfHwwfHx8MA%3D%3D");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,6 +86,7 @@ body::before {
 }
 
 .title-container>h2{
+    margin-top: -30px;
     font-family: var(--fuente-principal);
     font-size: 2rem;
     color: #fff;
@@ -474,14 +477,14 @@ form{
     gap: 20px;
 }
 
-#name{
+#name_contact{
     border: none;
     width: 37vw;
     height: 50px;
     border-radius: 5px;
 }
 
-#email{
+#email_contact{
     border: none;
     width: 37vw;
     height: 50px;
