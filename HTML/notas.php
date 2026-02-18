@@ -28,7 +28,7 @@
                   src="https://cdn-icons-png.flaticon.com/128/10165/10165587.png"
                   alt="icono de descripcion"
                 />
-                <a href="../dasboard/dashboard.php#Descripcion">Descripcion</a>
+                <a href="../dashboard/dashboard.php#Descripcion">Descripcion</a>
               </li>
               <li class="options-list">
                 <img
