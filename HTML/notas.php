@@ -14,7 +14,7 @@
             <h1 class="title">THE CHRONICLES OF THE NEW ONE!</h1>
             <li class="item-centralizado">
               <span
-                ><a href="../dashboard.php" aria-label="ir al inicio"
+                ><a href="../dashboard/dashboard.php" aria-label="ir al inicio"
                   ><img
                     class="imgtno"
                     src="../Media/TNOlogo.png"
