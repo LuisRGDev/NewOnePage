@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Registro de usuarios</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
     <section class="section-log">
         <div class="container">
-            <form action="auth/login.php" id="Login" class="form" method="POST">
+            <form action="../users/insertUser.php" id="Login" class="form" method="POST">
                 <div class="logotno-container">
-                    <img class="logotno" src="Media/TNOlogo.png" alt="logo del the new one">
+                    <img class="logotno" src="../Media/TNOlogo.png" alt="logo del the new one">
                 </div>
                 <div class="title-container">
-                    <h2>BIENVENIDO!</h2>
+                    <h2>REGISTRATE</h2>
                 </div>
                 <div class="form-container">
                     <div class="input-container">
@@ -26,14 +26,8 @@
                         <input name="password" type="password" placeholder="password" id="password">
                     </div>
                 </div>
-                <div class="button-container">
-                    <button class="button_log" type="submit" id="button-login"><p>INGRESAR</p></button>
-                </div>
                 <div class="button-container-register">
-                    <a class="button_reg" id="button-register" href="views/register.php"><p>REGISTRASE</p></a>
-                </div>
-                <div class="links-container">
-                  <a class="recover-password" href="">Olvidaste tu contraseña?</a>  
+                    <button class="button-registro" type="submit" id="button-login">REGISTRAR</button>
                 </div>
             </form>
         </div>

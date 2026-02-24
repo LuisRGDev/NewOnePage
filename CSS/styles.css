@@ -102,18 +102,56 @@ body::before {
 
 .input-container > input{
     padding: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .button-container{
-    margin-top: 1rem;
+    margin-top: 0;
     width: 100%;
 }
 
-.button-container > button{
+.button-container-register{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    height: 2.6rem;
+    background-color: #0898ebc7;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button-container .button_log{
     width: 100%;
     padding: 0.7rem;
     border: none;
+    border-radius: 20px;
+    font-size: 1rem;
     cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #054ed6c5;
+}
+
+.button-registro{
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #3679f5a1;
+}
+
+.button-container-register .button_reg{
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    text-decoration: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 .links-container{
@@ -127,10 +165,20 @@ body::before {
     text-align: center;
 }
 
-.links-container > p{
+.recover-password{
+    text-decoration: none;
     color: #fff;
     line-height: 0.1rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* .register_button{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
 
 /* ------------------------------------------------dashboard------------------------------------------------------------ */
 
