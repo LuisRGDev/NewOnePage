@@ -20,7 +20,7 @@ $pdo = getConnection();
 
 try {
 
-    $query = $pdo->prepare("SELECT id, password * FROM users WHERE email = ?");
+    $query = $pdo->prepare("SELECT id, password, role FROM users WHERE email = ?");
     $query->execute([$email]);
 
     $user = $query->fetch(PDO::FETCH_ASSOC);
@@ -33,14 +33,17 @@ try {
     if (password_verify($password, $user['password'])){
         session_regenerate_id(true);
         $_SESSION['user_id'] = $user['id'];
+        $_SESSION['role'] = $user['role'];
 
-        header("Location: ../dashboard/dashboard.php");
+        if($user['role'] === 'admin'){
+            header("Location: ../views/admin.php");
+        }else{
+            header("Location: ../dashboard/dashboard.php");
+        }
         exit;
     }else{
         exit("Contraseña incorrecta");
     }
-
-    
 
 } catch (PDOException $e) {
     echo json_encode(["code"=>500, "message"=>"error en servidor"]);
