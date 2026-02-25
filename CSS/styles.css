@@ -735,19 +735,83 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
 
 }
-/* .task_ni_button{
-    display: inline-block;
-    background-image: linear-gradient(to top left, #1250fa 0%, #070f61 50%, #303eff 100%);
-    color:white;
-    width: 150px;
-    height: 50px;
-    text-decoration: none;
-    border-radius: 5px;
-    justify-content: center;
+
+/* -----------------------------------------------------------Vista de administrador CRUD (admin.php)------------------------------------------------------------- */
+.section-crud{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../Media/bd-image.png");  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.crud-title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    margin-top: 4rem;
+    background: linear-gradient(to left, #001aff 0%, #248bdf 50%, #0099ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.users-table{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} */
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.table-crud{
+    background-color: #0ab0fda8;
+    /* margin-left: 6.5rem; */
+    text-align: center;
+    gap: 4rem;
+    max-width: 40%;
+    width: 30%;
+    height: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.table-columns{
+    color: #000000;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.table-data{
+    
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.crud-buttons-section{
+    padding-top: 2rem;
+    word-spacing: 6rem;
+}
+
+.crud-buttons-ref{
+    text-decoration: none;
+    color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6rem;
+}
+
+.out-button{
+    margin-right: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--fuente-principal);
+    color: #d30b0be0;
+}
+
+
+/* --------------------------------------------------------------------Responsive--------------------------------------------------------------------------- */
 
 /* Diseño para tablet  */
 @media (max-width: 1024px){

@@ -19,11 +19,11 @@
                 <div class="form-container">
                     <div class="input-container">
                         <label for="email"></label>
-                        <input name="email" type="email" placeholder="email" id="email">
+                        <input name="email" type="email" placeholder="email" id="email" required>
                     </div>
                     <div class="input-container">
                         <label for="password"></label>
-                        <input name="password" type="password" placeholder="password" id="password">
+                        <input name="password" type="password" placeholder="password" id="password"  minlength="8" required>
                     </div>
                 </div>
                 <div class="button-container-register">

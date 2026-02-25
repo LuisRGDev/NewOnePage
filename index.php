@@ -19,7 +19,7 @@
                 <div class="form-container">
                     <div class="input-container">
                         <label for="email"></label>
-                        <input name="email" type="email" placeholder="email" id="email">
+                        <input name="email" type="email" placeholder="email" id="email" required>
                     </div>
                     <div class="input-container">
                         <label for="password"></label>
@@ -40,3 +40,7 @@
     </section>
 </body>
 </html>
+
+<!-- Credenciales de administrador:
+    admin@newone.com
+    admin123 -->
