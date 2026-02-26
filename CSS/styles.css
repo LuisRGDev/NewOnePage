@@ -789,17 +789,41 @@ footer{
     padding: 10px;
 }
 
+.table-data--button{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
 .crud-buttons-section{
     padding-top: 2rem;
     word-spacing: 6rem;
 }
 
-.crud-buttons-ref{
+.crud-buttons--update{
+    background-color: #176294;
+     border-collapse: collapse;
+    padding: 10px;
+    margin-left: .5rem;
+    margin-right: .5rem;
     text-decoration: none;
-    color: #000000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: var(--fuente-principal);
+    font-size: .8rem;
 }
+
+.crud-buttons--delete{
+    margin-left: .5rem;
+    margin-right: .5rem;
+    background-color: #f70000;
+    border-collapse: collapse;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--fuente-principal);
+    font-size: .8rem;
+}
+
 
 .out-button{
     margin-right: 1.5rem;
@@ -807,7 +831,8 @@ footer{
     text-decoration: none;
     font-size: 1.5rem;
     font-family: var(--fuente-principal);
-    color: #d30b0be0;
+    color: #000000e0;
+    margin-top: 2rem;
 }
 
 

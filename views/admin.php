@@ -25,7 +25,6 @@ $pdo = getConnection();
     <div class="users-table">
         <table class="table-crud">
             <thead>
-                <th class="table-columns">SELECTOR</th>
                 <th class="table-columns">ID</th>
                 <th class="table-columns">EMAIL</th>
                 <!-- <th class="table-columns">Password</th> -->
@@ -39,20 +38,17 @@ $pdo = getConnection();
                 foreach ($user as $row):
                     ?>
                     <tr>
-                        <th class="table-data"><input type="checkbox" name="ids[]" value="<?=$row['id']?>"></th>
                         <th class="table-data"><?=htmlspecialchars( $row['id']) ?></th>
                         <th class="table-data"><?=htmlspecialchars($row['email']) ?></th>        
                         <th class="table-data"><?=htmlspecialchars($row['role']) ?></th>    
+                        <th class="table-data--button"><a class="crud-buttons--update" href="update.php?id=<?= $row['id'] ?>">EDITAR</a></th>
+                        <th class="table-data--button"> <a class="crud-buttons--delete" href="delete.php?id=<?= $row['id'] ?>">ELIMINAR</a></th>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>  
     </div>
-            <div class="crud-buttons-section">
-                <a class="crud-buttons-ref" href="">EDITAR</a>
-                <a class="crud-buttons-ref" href="">ELIMINAR</a>
-            </div>
-            <a class="out-button" href="../index.php">Salir</a>
+            <a class="out-button" href="../index.php">SALIR</a>
     </section>
    
 </body>
