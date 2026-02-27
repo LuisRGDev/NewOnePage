@@ -2,10 +2,20 @@
 require_once "../bd/bd.php";
 $pdo = getConnection();
 
-$id=$_GET['id'];
+if(!isset($_GET['id']) || !is_numeric($_GET['id'])){
+    die("ID invalido");
+}
 
-$query = $pdo->query("SELECT * FROM users WHERE id=?");
-$user = $query->fetch(PDO::FETCH_ASSOC);
+$id = $_GET['id'];
+
+$stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+$stmt->execute([$id]);
+
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if(!$user){
+    die("Usuario no encontrado");
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +30,10 @@ $user = $query->fetch(PDO::FETCH_ASSOC);
         <div class="update-user--form">
             <form action="../users/edit_user.php" method="POST">
                 <h1>Editar usuario</h1>
-                <input type="hidden" name="id" value="<?= $row['id']?>">
-                <input type="text" name="email" placeholder="email" value="<?= $row['email']?>" >
-                <input type="text" name="password" placeholder="Contraseña" value="<?= $row['password'] ?>">
-                <input type="text" name="role" placeholder="rol" value="<?= $row['role']?>">
+                <input type="hidden" name="id" value="<?= $user['id']?>">
+                <input type="text" name="email" placeholder="email" value="<?= $user['email']?>" >
+                <input type="text" name="password" placeholder="Nueva contraseña">
+                <input type="text" name="role" placeholder="rol" value="<?= $user['role']?>">
 
                 <input type="submit" value="Actualizar información">
             </form>

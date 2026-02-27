@@ -42,7 +42,13 @@ $pdo = getConnection();
                         <th class="table-data"><?=htmlspecialchars($row['email']) ?></th>        
                         <th class="table-data"><?=htmlspecialchars($row['role']) ?></th>    
                         <th class="table-data--button"><a class="crud-buttons--update" href="update.php?id=<?= $row['id'] ?>">EDITAR</a></th>
-                        <th class="table-data--button"> <a class="crud-buttons--delete" href="delete.php?id=<?= $row['id'] ?>">ELIMINAR</a></th>
+                        <!-- <th class="table-data--button"> <a class="crud-buttons--delete" href="../users/deleteUser.php?id=<?= $row['id'] ?>">ELIMINAR</a></th> -->
+                       <th class="table-data--button"><form class="form--delete" action="../users/deleteUser.php" method="POST">
+                            <input type="hidden" name="id" value="<?=$row['id'] ?>">
+                            <button class="button--deleteuser" type="submit" onclick="return confirm('¿Eliminar usuario?')">
+                                ELIMINAR
+                            </button>
+                        </form></th> 
                     </tr>
                 <?php endforeach; ?>
             </tbody>

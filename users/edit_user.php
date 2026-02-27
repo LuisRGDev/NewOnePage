@@ -3,22 +3,53 @@ require_once "../bd/bd.php";
 $pdo = getConnection();
 
 $id = $_POST['id'];
-$email = $_POST['email'];
-$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+$email = trim($_POST['email']);
+$role = $_POST['role'];
+$passwordInput = $_POST['password'];
 
-$sql = "UPDATE  users SET email='$email', password='$password', role='$role' WHERE id='$id'";
+try {
 
-try{
-    $query = $pdo->prepare($sql);
-$query->execute([":id" => $id,
-                 ":email" => $email,
-                 ":password" => $password]);
+    if (!empty($passwordInput)) {
+        $password = password_hash($passwordInput, PASSWORD_DEFAULT);
 
-                 header("Location: ../index.php");
-}catch(PDOException $e){
-    if($e->errorInfo[1] === 1062){
-        die("El usuario ha sido editado exitosamente");
+        $sql = "UPDATE users 
+                SET email = :email,
+                    password = :password,
+                    role = :role
+                WHERE id = :id";
+
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            ":email" => $email,
+            ":password" => $password,
+            ":role" => $role,
+            ":id" => $id
+        ]);
+
+    } else {
+
+        $sql = "UPDATE users 
+                SET email = :email,
+                    role = :role
+                WHERE id = :id";
+
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([
+            ":email" => $email,
+            ":role" => $role,
+            ":id" => $id
+        ]);
     }
+
+    header("Location: ../index.php");
+    exit;
+
+} catch (PDOException $e) {
+
+    if ($e->errorInfo[1] == 1062) {
+        die("El correo ya está registrado.");
+    }
+
     die("Error en la base de datos.");
 }
 ?>

@@ -835,6 +835,23 @@ footer{
     margin-top: 2rem;
 }
 
+.form--delete{
+    display: inline;
+}
+
+.button--deleteuser{
+    cursor: pointer;
+    border: none;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    background-color: #f70000;
+    border-collapse: collapse;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--fuente-principal);
+    font-size: .8rem;
+}
 
 /* --------------------------------------------------------------------Responsive--------------------------------------------------------------------------- */
 

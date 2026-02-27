@@ -9,8 +9,8 @@ $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $sql = "INSERT INTO users (id, email, password) VALUES(:id, :email, :password)";
 
 try{
-    $query = $pdo->prepare($sql);
-$query->execute([":id" => $id,
+    $stmt = $pdo->prepare($sql);
+$stmt->execute([":id" => $id,
                  ":email" => $email,
                  ":password" => $password]);
 
