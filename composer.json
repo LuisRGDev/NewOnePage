@@ -1,0 +1,16 @@
+{
+    "name": "larosales/new-one-page",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LuisRGDev",
+            "email": "luisalbertorosalesg@gmail.com"
+        }
+    ],
+    "require": {}
+    
+}
