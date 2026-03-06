@@ -1,6 +1,7 @@
 <?php
-require_once "../bd/bd.php";
-$pdo = getConnection();
+require_once __DIR__ . '/../vendor/autoload.php';
+use Luisrosales\NewOnePage\Database\Connection;
+$pdo = Connection::get();
 
 $id = $_POST['id'];
 $email = trim($_POST['email']);

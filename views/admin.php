@@ -7,8 +7,9 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'admin') {
 }
 ?>
 <?php
-require_once "../bd/bd.php";
-$pdo = getConnection();
+require_once __DIR__ . '/../vendor/autoload.php';
+use Luisrosales\NewOnePage\Database\Connection;
+$pdo = Connection::get();
 ?>
 
 <!DOCTYPE html>

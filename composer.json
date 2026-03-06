@@ -1,16 +1,14 @@
 {
-    "name": "larosales/new-one-page",
+    "name": "luisrosales/new-one-page",
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "Luisrosales\\NewOnePage\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "LuisRGDev",
-            "email": "luisalbertorosalesg@gmail.com"
+            "name": "Luis"
         }
     ],
     "require": {}
-    
 }

@@ -1,5 +1,6 @@
 <?php
-require_once "../bd/bd.php";
+require_once __DIR__ . '/../vendor/autoload.php';
+use Luisrosales\NewOnePage\Database\Connection;
 
 session_start();
 
@@ -16,7 +17,7 @@ if (!$email || !$password) {
     exit;
 }
 
-$pdo = getConnection();
+$pdo = Connection::get();
 
 try {
 

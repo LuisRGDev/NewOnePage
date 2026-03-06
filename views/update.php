@@ -1,6 +1,7 @@
 <?php
-require_once "../bd/bd.php";
-$pdo = getConnection();
+require_once __DIR__ . '/../vendor/autoload.php';
+use Luisrosales\NewOnePage\Database\Connection;
+$pdo = Connection::get();
 
 if(!isset($_GET['id']) || !is_numeric($_GET['id'])){
     die("ID invalido");
