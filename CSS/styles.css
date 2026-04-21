@@ -180,7 +180,7 @@ body::before {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 } */
 
-/* ------------------------------------------------dashboard------------------------------------------------------------ */
+/* ------------------------------------------------ Menu nav------------------------------------------------------------ */
 
 .nav-bar{
     background-image: linear-gradient(to bottom, #0623a0 0%, #ffffff 50%, #1b0e97 100%);
@@ -273,6 +273,7 @@ nav .options-list:hover{
     
 } */
 
+/* -------------------------------------------------- Dashboard ----------------------------------------------------- */
 .title{
     display: flex;   
     font-family: var(--fuente-principal);
@@ -351,6 +352,8 @@ tbody td{
     text-align: center;
     border: 3px solid rgb(255, 255, 255);
 } */
+
+
 .tareas{
     margin: 0;
     padding: 0;
@@ -475,6 +478,9 @@ tbody td{
 .valores__list li:hover{
     transform: translateX(20px)
 }
+
+
+/* --------------------------------------------------------------------------- Footer --------------------------------------------------------- */
 
 .formulario{
     background-image: linear-gradient(to bottom, #193aa5 0%, #ffffff 50%, #1b0e97 100%);
